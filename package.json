@@ -1,0 +1,47 @@
+{
+  "name": "crawlcove-hreflang-checker",
+  "version": "1.0.0",
+  "description": "hreflang checker CLI: read a page's hreflang tags (HTML and HTTP Link header) or a sitemap's xhtml:link annotations, validate the codes, and confirm self-reference, x-default and return tags.",
+  "type": "module",
+  "bin": {
+    "hreflang-checker": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "seo",
+    "hreflang",
+    "hreflang-checker",
+    "international-seo",
+    "x-default",
+    "sitemap",
+    "cli",
+    "crawl-cove"
+  ],
+  "author": "Crawl Cove",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CrawlCove/crawlcove-hreflang-checker.git"
+  },
+  "homepage": "https://crawlcove.com/tools/hreflang-checker?utm_source=github&utm_medium=crawlcove-hreflang-checker",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "fast-xml-parser": "^5.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  }
+}
